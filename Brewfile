@@ -4,7 +4,7 @@ brew "asdf"
 brew "zsh-autosuggestions"
 brew "mas" # Mac App Store Manager
 brew "postgresql@14"
-brew "yarn"
+brew "gpg"
 
 # Apps
 cask "iterm2"
