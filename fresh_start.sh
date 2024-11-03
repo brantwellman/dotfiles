@@ -48,7 +48,32 @@ fi
 # Start postgres
 brew services start postgresql@14
 
-# TODO: Install node with asdf
-# TODO: Install ruby with asdf
+# Install nodejs plugin, install node latest, set global version to latest
+asdf plugin add nodejs
+asdf install nodejs latest
+asdf global nodejs latest
 
-# TODO: Install yarn
+# Install ruby plugin, install ruby latest, set global version to latest
+asdf plugin add ruby
+asdf install ruby latest
+asdf global ruby latest
+
+# Install yarn plugin, install yarn latest, set global version to latest
+asdf plugin add yarn
+asdf install yarn latest
+asdf global yarn latest
+
+# Configure git
+git config --global user.name "Brant Wellman"                                                                                                                                                                                                                                                                            ─╯
+git config --global user.email "brantwellman@gmail.com"
+git config --global color.ui true
+
+# Configure gems to skip documentation installation step
+echo "gem: --no-document" >> ~/.gemrc
+
+# Update ruby gem manager and any installed gems
+gem update --system
+gem update
+
+# Intall ruby gems
+gem install rails
