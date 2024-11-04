@@ -8,8 +8,8 @@ brew "mas" # Mac App Store Manager
 
 # Apps
 # cask "iterm2" - Installed manually
+cask "visual-studio-code"
 # cask "google-chrome"
-# cask "visual-studio-code"
 # cask "slack"
 # cask "discord"
 # cask "zoom"
