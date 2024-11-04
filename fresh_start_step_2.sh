@@ -16,9 +16,9 @@ echo >> /Users/brantwellman/.zprofile
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/brantwellman/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-rm -rf $HOME/.zshrc
-ln -sw $HOME/.dotfiles/.zshrc $HOME/.zshrc
+# # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+# rm -rf $HOME/.zshrc
+# ln -sw $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Update Homebrew recipes
 echo "Updating homebrew..."
