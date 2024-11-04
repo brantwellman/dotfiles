@@ -98,8 +98,8 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
-# . /usr/local/opt/asdf/libexec/asdf.sh
-
+# Confirm these lines have been added to the bottomo of the file
+# . /opt/homebrew/opt/asdf/libexec/asdf.sh
 # source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Need this declared near the end of file for Apple silicon

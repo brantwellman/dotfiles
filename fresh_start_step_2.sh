@@ -31,7 +31,7 @@ brew bundle --file ./Brewfile
 
 # # Add asdf to .zshrc
 if ! grep -Fx ". $(brew --prefix asdf)/libexec/asdf.sh" "$HOME/.dotfiles/.zshrc"; then
-  echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> $HOME/.dotfiles/.zshrc
+  echo "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> $HOME/.dotfiles/.zshrc
 fi
 
 # # Add source zsh-autosuggestions
