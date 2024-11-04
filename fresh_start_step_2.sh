@@ -70,6 +70,6 @@ gem update --system
 gem install bundler
 gem update
 
-# # Intall ruby gems
-# echo "Installing rails..."
-# gem install rails
+# Intall ruby gems
+echo "Installing rails..."
+gem install rails
