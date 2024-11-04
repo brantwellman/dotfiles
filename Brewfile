@@ -2,7 +2,7 @@ tap "homebrew/bundle"
 
 brew "asdf"
 brew "zsh-autosuggestions"
-# brew "postgresql@14"
+brew "postgresql@14"
 # brew "gpg"
 # brew "mas" # Mac App Store Manager
 

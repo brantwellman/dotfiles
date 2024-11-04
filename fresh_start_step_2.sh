@@ -39,9 +39,9 @@ if ! grep -Fx "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggest
   echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.dotfiles/.zshrc
 fi
 
-# # Start postgres
-# echo "Installing postgress through brew..."
-# brew services start postgresql@14
+# Start postgres
+echo "Starting postgress through brew..."
+brew services start postgresql@14
 
 # # Install nodejs plugin, install node latest, set global version to latest
 # echo "Installing node through brew..."
