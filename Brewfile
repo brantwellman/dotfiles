@@ -2,9 +2,9 @@ tap "homebrew/bundle"
 
 brew "asdf"
 brew "zsh-autosuggestions"
-brew "mas" # Mac App Store Manager
 brew "postgresql@14"
 brew "gpg"
+brew "mas" # Mac App Store Manager
 
 # Apps
 cask "iterm2"
