@@ -98,9 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
-. /usr/local/opt/asdf/libexec/asdf.sh
+# . /usr/local/opt/asdf/libexec/asdf.sh
 
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Need this declared near the end of file for Apple silicon
 export PATH=/opt/homebrew/bin:$PATH
