@@ -55,11 +55,11 @@ asdf plugin add ruby
 asdf install ruby latest
 asdf global ruby latest
 
-# # Install yarn plugin, install yarn latest, set global version to latest
-# echo "Installing yarn through brew..."
-# asdf plugin add yarn
-# asdf install yarn latest
-# asdf global yarn latest
+# Install yarn plugin, install yarn latest, set global version to latest
+echo "Installing yarn through brew..."
+asdf plugin add yarn
+asdf install yarn latest
+asdf global yarn latest
 
 # # Configure gems to skip documentation installation step
 # echo "gem: --no-document" >> ~/.gemrc
