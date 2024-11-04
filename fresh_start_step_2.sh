@@ -43,11 +43,11 @@ fi
 echo "Starting postgress through brew..."
 brew services start postgresql@14
 
-# # Install nodejs plugin, install node latest, set global version to latest
-# echo "Installing node through brew..."
-# asdf plugin add nodejs
-# asdf install nodejs latest
-# asdf global nodejs latest
+# Install nodejs plugin, install node latest, set global version to latest
+echo "Installing node through brew..."
+asdf plugin add nodejs
+asdf install nodejs latest
+asdf global nodejs latest
 
 # # Install ruby plugin, install ruby latest, set global version to latest
 # echo "Installing ruby through brew..."
