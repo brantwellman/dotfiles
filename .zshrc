@@ -102,6 +102,5 @@ source $ZSH/oh-my-zsh.sh
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# TODO:Is this line necessary?
-# Need this declared near the end of file
-# export PATH=/opt/homebrew/bin:$PATH
+# Need this declared near the end of file for Apple silicon
+export PATH=/opt/homebrew/bin:$PATH
