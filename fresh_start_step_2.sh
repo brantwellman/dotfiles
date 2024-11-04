@@ -61,13 +61,14 @@ asdf plugin add yarn
 asdf install yarn latest
 asdf global yarn latest
 
-# # Configure gems to skip documentation installation step
-# echo "gem: --no-document" >> ~/.gemrc
+# Configure gems to skip documentation installation step
+echo "gem: --no-document" >> ~/.gemrc
 
-# # Update ruby gem manager and any installed gems
-# echo "Updating rubygems and all installed gems..."
-# gem update --system
-# gem update
+# Update ruby gem manager and any installed gems
+echo "Updating rubygems, bundler, and all installed gems..."
+gem update --system
+gem install bundler
+gem update
 
 # # Intall ruby gems
 # echo "Installing rails..."
