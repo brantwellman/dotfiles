@@ -18,5 +18,9 @@ if ! [ -d "$HOME/powerlevel10k" ]; then
   echo "source ~/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
 fi
 
+# Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
+rm -rf $HOME/.zshrc
+ln -sw $HOME/.dotfiles/.zshrc $HOME/.zshrc
+
 echo "Open new iTerm2 window and download the necessary fonts..."
 echo "Next, run step 2: ./fresh_start_step_2.sh"
