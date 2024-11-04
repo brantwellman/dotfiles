@@ -17,7 +17,7 @@ export ZSH="$HOME/.oh-my-zsh"
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.dotfiles/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.dotfiles/.p10k.zsh
+source ~/.dotfiles/.p10k.zsh
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -98,9 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
-. /usr/local/opt/asdf/libexec/asdf.sh
-
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Confirm these lines have been added to the bottom of the file
+# . /opt/homebrew/opt/asdf/libexec/asdf.sh
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Need this declared near the end of file for Apple silicon
 export PATH=/opt/homebrew/bin:$PATH
