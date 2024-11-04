@@ -5,6 +5,8 @@ echo "Configuring git..."
 git config --global user.name "Brant Wellman"                                                                                                                                                                                                                                                                            ─╯
 git config --global user.email "brantwellman@gmail.com"
 git config --global color.ui true
+git config --global core.editor "code --wait"
+git config --global core.excludesfile "/Users/brantwellman/.dotfiles/.gitignore_global"
 
 # Check for Homebrew and install if it isn't present
 if test ! $(which brew); then
