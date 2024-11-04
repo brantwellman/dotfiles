@@ -18,5 +18,5 @@ if ! [ -d "$HOME/powerlevel10k" ]; then
   echo "source ~/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.zshrc
 fi
 
-echo "Open new terminal window and complete Powerlevel10K configuration..."
+echo "Open new iTerm2 window and download the necessary fonts..."
 echo "Next, run step 2: ./fresh_start_step_2.sh"
