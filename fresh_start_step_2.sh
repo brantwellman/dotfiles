@@ -25,19 +25,19 @@ echo "Updating homebrew..."
 brew update
 
 # Install all our dependencies with bundle (See Brewfile)
-# echo "Installing from the Brewfile..."
-# brew tap homebrew/bundle
-# brew bundle --file ./Brewfile
+echo "Installing from the Brewfile..."
+brew tap homebrew/bundle
+brew bundle --file ./Brewfile
 
 # # Add asdf to .zshrc
-# if ! grep -Fx ". $(brew --prefix asdf)/libexec/asdf.sh" "$HOME/.dotfiles/.zshrc"; then
-#   echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> $HOME/.dotfiles/.zshrc
-# fi
+if ! grep -Fx ". $(brew --prefix asdf)/libexec/asdf.sh" "$HOME/.dotfiles/.zshrc"; then
+  echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> $HOME/.dotfiles/.zshrc
+fi
 
 # # Add source zsh-autosuggestions
-# if ! grep -Fx "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" "$HOME/.dotfiles/.zshrc"; then
-#   echo -e "\nsource $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.dotfiles/.zshrc
-# fi
+if ! grep -Fx "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" "$HOME/.dotfiles/.zshrc"; then
+  echo -e "\nsource $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.dotfiles/.zshrc
+fi
 
 # # Start postgres
 # echo "Installing postgress through brew..."
