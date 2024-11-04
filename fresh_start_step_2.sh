@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Configure git
 echo "Configuring git..."
 git config --global user.name "Brant Wellman"                                                                                                                                                                                                                                                                            ─╯
@@ -16,10 +18,6 @@ echo >> /Users/brantwellman/.zprofile
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/brantwellman/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-# rm -rf $HOME/.zshrc
-# ln -sw $HOME/.dotfiles/.zshrc $HOME/.zshrc
-
 # Update Homebrew recipes
 echo "Updating homebrew..."
 brew update
@@ -29,15 +27,15 @@ brew update
 # brew tap homebrew/bundle
 # brew bundle --file ./Brewfile
 
-# Add asdf to .zshrc
-if ! grep -Fx ". $(brew --prefix asdf)/libexec/asdf.sh" "$HOME/.dotfiles/.zshrc"; then
-  echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> $HOME/.dotfiles/.zshrc
-fi
+# # Add asdf to .zshrc
+# if ! grep -Fx ". $(brew --prefix asdf)/libexec/asdf.sh" "$HOME/.dotfiles/.zshrc"; then
+#   echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> $HOME/.dotfiles/.zshrc
+# fi
 
-# Add source zsh-autosuggestions
-if ! grep -Fx "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" "$HOME/.dotfiles/.zshrc"; then
-  echo -e "\nsource $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.dotfiles/.zshrc
-fi
+# # Add source zsh-autosuggestions
+# if ! grep -Fx "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" "$HOME/.dotfiles/.zshrc"; then
+#   echo -e "\nsource $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.dotfiles/.zshrc
+# fi
 
 # # Start postgres
 # echo "Installing postgress through brew..."
