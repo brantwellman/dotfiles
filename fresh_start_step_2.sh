@@ -49,11 +49,11 @@ asdf plugin add nodejs
 asdf install nodejs latest
 asdf global nodejs latest
 
-# # Install ruby plugin, install ruby latest, set global version to latest
-# echo "Installing ruby through brew..."
-# asdf plugin add ruby
-# asdf install ruby latest
-# asdf global ruby latest
+# Install ruby plugin, install ruby latest, set global version to latest
+echo "Installing ruby through brew..."
+asdf plugin add ruby
+asdf install ruby latest
+asdf global ruby latest
 
 # # Install yarn plugin, install yarn latest, set global version to latest
 # echo "Installing yarn through brew..."
