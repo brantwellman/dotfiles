@@ -98,7 +98,7 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
-# Confirm these lines have been added to the bottomo of the file
+# Confirm these lines have been added to the bottom of the file
 # . /opt/homebrew/opt/asdf/libexec/asdf.sh
 # source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
