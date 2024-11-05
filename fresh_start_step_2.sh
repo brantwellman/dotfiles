@@ -34,11 +34,6 @@ if ! grep -Fx ". $(brew --prefix asdf)/libexec/asdf.sh" "$HOME/.dotfiles/.zshrc"
   echo "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> $HOME/.dotfiles/.zshrc
 fi
 
-# # Add source zsh-autosuggestions
-if ! grep -Fx "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" "$HOME/.dotfiles/.zshrc"; then
-  echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> $HOME/.dotfiles/.zshrc
-fi
-
 # Start postgres
 echo "Starting postgress through brew..."
 brew services start postgresql@14

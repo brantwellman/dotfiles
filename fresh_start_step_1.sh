@@ -22,5 +22,8 @@ fi
 rm -rf $HOME/.zshrc
 ln -sw $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
+# Install zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 echo "Open new iTerm2 window and download the necessary fonts..."
 echo "Next, run step 2: ./fresh_start_step_2.sh"

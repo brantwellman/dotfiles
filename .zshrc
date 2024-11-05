@@ -74,10 +74,9 @@ ZSH_CUSTOM=$DOTFILES
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
-
 # source ~/.oh-my-zsh/plugins/git/git.plugin.zsh
 
-plugins=(git asdf rails)
+plugins=(zsh-autosuggestions git asdf rails)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,9 +97,8 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
-# Confirm these lines have been added to the bottom of the file
-# . /opt/homebrew/opt/asdf/libexec/asdf.sh
-# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Confirm this line has been added to the bottom of the file
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 # Need this declared near the end of file for Apple silicon
 export PATH=/opt/homebrew/bin:$PATH
