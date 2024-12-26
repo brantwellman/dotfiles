@@ -68,3 +68,10 @@ gem update
 # Intall ruby gems
 echo "Installing rails..."
 gem install rails
+
+# Create coding diirectory
+echo "Checking for and adding code_spaces diirectory if necessary..."
+
+if ! [ -d "$HOME/code_spaces" ]; then
+  mkdir $HOME/code_spaces
+fi
