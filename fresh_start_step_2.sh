@@ -29,11 +29,6 @@ echo "Installing from the Brewfile..."
 brew tap homebrew/bundle
 brew bundle --file ./Brewfile
 
-# # Add asdf to .zshrc
-if ! grep -Fx ". $(brew --prefix asdf)/libexec/asdf.sh" "$HOME/.dotfiles/.zshrc"; then
-  echo "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> $HOME/.dotfiles/.zshrc
-fi
-
 # Start postgres
 echo "Starting postgress through brew..."
 brew services start postgresql@14
@@ -47,8 +42,8 @@ asdf global nodejs latest
 # Install ruby plugin, install ruby latest, set global version to latest
 echo "Installing ruby through brew..."
 asdf plugin add ruby
-asdf install ruby latest
-asdf global ruby latest
+asdf install ruby 3.3.5
+asdf global ruby 3.3.5
 
 # Install yarn plugin, install yarn latest, set global version to latest
 echo "Installing yarn through brew..."
@@ -68,3 +63,10 @@ gem update
 # Intall ruby gems
 echo "Installing rails..."
 gem install rails
+
+# Create coding diirectory
+echo "Checking for and adding code_spaces diirectory if necessary..."
+
+if ! [ -d "$HOME/code_spaces" ]; then
+  mkdir $HOME/code_spaces
+fi

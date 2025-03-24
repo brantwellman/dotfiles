@@ -16,6 +16,10 @@ cdcode () {
  cd ~
  cd "code_spaces"
 }
+cdlist_tierly () {
+   cdcode
+   cd "personal_projects/list_tierly"
+}
 alias dotfiles="cd $DOTFILES"
 
 # git aliases

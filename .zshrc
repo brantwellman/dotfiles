@@ -44,7 +44,7 @@ HYPHEN_INSENSITIVE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -97,8 +97,8 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
-# Confirm this line has been added to the bottom of the file
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
 # Need this declared near the end of file for Apple silicon
 export PATH=/opt/homebrew/bin:$PATH
+
+# May need this for VSCode extension
+# PATH=~/.console-ninja/.bin:$PATH
