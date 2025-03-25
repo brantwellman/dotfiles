@@ -70,3 +70,6 @@ echo "Checking for and adding code_spaces diirectory if necessary..."
 if ! [ -d "$HOME/code_spaces" ]; then
   mkdir $HOME/code_spaces
 fi
+
+# Create symlink to custom .railsrc file
+ln -s ~/.dotfiles/.railsrc ~/.railsrc
